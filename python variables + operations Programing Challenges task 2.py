@@ -1,10 +1,10 @@
-#Task 2: Shopping Calculator
-#Create a program that calculates the total cost of shopping items:
+# Task 2: Shopping Calculator
+# Create a program that calculates the total cost of shopping items:
 
-#Store the price of 3 different items in variables
-#Store the quantity of each item purchased
-#Calculate and display the total cost for each item
-#Calculate and display the grand total
+# Store the price of 3 different items in variables
+# Store the quantity of each item purchased
+# Calculate and display the total cost for each item
+# Calculate and display the grand total
 
 oranges = 0.60
 Numberoforanges = 13
