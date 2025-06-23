@@ -4,7 +4,7 @@
 
 total = 0
 
-for index in range(12):
+for index in range(5):
 
 savings = float(input("Enter monthly savings amount(£): "))
 
