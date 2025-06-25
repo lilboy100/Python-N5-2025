@@ -14,4 +14,12 @@ start_reading = 100
 end_reading = 250 
 
 units_used = (end_reading - start_reading)
-total_cost = (each_unit * units_used)
+cost_of_units = (each_unit * units_used)
+
+standing_charge = 12
+
+total_bill = (cost_of_units + standing_charge)
+
+print("total bill",total_bill)
+
+
