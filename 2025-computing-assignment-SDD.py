@@ -1,22 +1,37 @@
+import random
+
+# set up all variables
 mysteryFruit = ["apple" "bannana" "blueberry" "kiwi" "mango" "oragne" "peach" "paineaple" "rasberry" "strawberry"]
-userFruits = [""]
+userFruits = []
 counter = 0
-decision = ("yes")
-while decision = yes and counter <6:
-    userFruits = int(input("please enter the fruit name"))
-    fruitLength = len(userFruits)
+decision = "yes"
+
+# loop until all fruit added
+while decision == "yes" and counter <6:
+    userInput = input("please enter the fruit name")
+    fruitLength = len(userInput)
     while fruitLength <4:
         print("incorect fruit name length")
-        userFruits = int(input("please enter the fruit name"))
-        fruitLength = len(userFruits)
+        userInput = input("please enter the fruit name")
+        fruitLength = len(userInput)
+    # must be valid
+    userFruits.append(userInput) # adds userInput to userFruits array
     counter = counter +1
     decision = str(input("do you wnat to enter another fruit"))
-number = random.randit(0,9)
+
+# generate mystery fruit and show all other fruits added
+number = random.randint(0,9)
 for i in range(counter):
-    print("the fruits you entered where",userfruits[i+1])
+    print("the fruits you entered where",userfruits[i])
 print("the mistery fruit is", mysteryFruit[number])
-if counter <3
+
+# add 1 to counter because mystery fruit
+counter = counter + 1
+
+# show what type of drink it should be
+if counter <3:
     print("milkshake")
-    if counter =3 or 4
-        print("smoothie")
-        else print("fruit juice")
+elif counter ==3 or counter == 4:
+    print("smoothie")
+else:
+    print("fruit juice")
