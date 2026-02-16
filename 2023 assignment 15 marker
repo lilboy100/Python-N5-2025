@@ -1,0 +1,29 @@
+MilesTraveled = 0
+costjourneys =[]
+startMiles = int(input("enter milage at the start of the journey"))
+chargingStations = int(input("enter number of charging stations"))
+for i in range(chargingStations):
+    currentMiles = int(input("what is your mileage at your current charging station"))
+    KwRating = int(input("what is the valid KW rating for your current chargin station"))
+    while KwRating == 7 or KwRating == 22 or KwRating  == 50:
+        print("invalid KWrating, please sty again")
+        KwRating = int(input("enter the KWrating"))
+        kwRating = int(input("is KWrating = 7?"))
+    if KwRating == 7:
+            pricePerMile = 0 
+    if KwRating != 7:
+        KwRating = int(input("if KWrating = 22?"))
+        if KwRating  ==22:
+            PricePerMile = 0.005
+        if KwRating != 22:
+            PricePerMile = 0.01
+    MilesTraveled = currentMiles + startMiles
+    startMiles = currentMiles
+    costJourneyStage = pricePerMile * MilesTraveled
+    costjourneys.append(costJourneyStage) 
+totalMiles = currentMiles - currentMiles
+totalCost = sum(costjourneys)
+for i in range (len(costjourneys)):
+     print("journey stage", i + 1, "cost = £", round(costjourneys[i], 2))
+print("total cost = £", round (totalCost, 2))
+print("total miles =", totalMiles)
